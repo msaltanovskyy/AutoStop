@@ -1,0 +1,31 @@
+﻿@using static Microsoft.EntityFrameworkCore.DbLoggerCategory
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Копмания "AutoStop"</h1>
+        <p class="col-md-8 fs-4">Предоставление услуг автостопа по всей територии Украины.
+            Забронируй свою первую поездку
+        </p>
+        <a class="btn btn-primary btn-lg" role="button" asp-controller="Travels" asp-action="Index">Приступить</a>
+      </div>
+ </div>
+ <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>Самые лучшие и надежные машины</h2>
+          <p>Список машин вы можете проссмотреть сами</p>
+          <a class="btn btn-outline-light" role="button" asp-controller="Cars" asp-action="Index">Список</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Ваше менение не останеться в тени</h2>
+          <p>Вы можете добавить коментарий к любой поездке</p>
+        </div>
+      </div>
+ </div>
+
+
